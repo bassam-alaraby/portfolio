@@ -419,6 +419,45 @@ span {
     font-size: 1.5rem;
 }
 
+.contact-info {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact-info a {
+    color: #aaa;
+    font-size: 1.5rem;
+    transition: 0.2s ease;
+}
+
+.contact-info a:hover {
+    color: var(--main-color);
+}
+
+.contact-info i {
+    color: var(--main-color);
+    margin-right: 1rem;
+}
+
+.contact-availability {
+    margin-top: 1.5rem;
+    color: #aaa;
+    font-size: 1.5rem;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 1rem;
+}
+
+.contact-layout {
+    align-items: start;
+}
+
 /* ============================================================
     FOOTER
     ============================================================ */
