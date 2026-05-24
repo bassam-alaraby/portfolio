@@ -226,10 +226,12 @@
                             <i class="fa-solid fa-envelope" style="color:var(--main-color); margin-right:1rem;"></i>
                             elrabyb@gmail.com
                         </a>
+                        
                         <a href="https://www.linkedin.com/in/bsam-alaraby/" target="_blank" style="color:#aaa; font-size:1.5rem;">
                             <i class="fa-brands fa-linkedin" style="color:var(--main-color); margin-right:1rem;"></i>
                             linkedin.com/in/bsam-alaraby
                         </a>
+                        
                         <a href="https://github.com/bassam-alaraby" target="_blank" style="color:#aaa; font-size:1.5rem;">
                             <i class="fa-brands fa-github" style="color:var(--main-color); margin-right:1rem;"></i>
                             github.com/bassam-alaraby
@@ -238,23 +240,30 @@
                 </div>
         
                 <form id="contact-form" class="contact-form" action="https://formspree.io/f/maqlwbar" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Your email" required>
-                    </div>
+                    
                     <div class="form-group">
                         <label for="subject">Subject</label>
                         <input type="text" id="subject" name="subject" placeholder="Subject" required>
                     </div>
+                    
                     <div class="form-group">
                         <label for="message">Message</label>
                         <textarea id="message" name="message" placeholder="Your message..." required></textarea>
                     </div>
+                    
                     <button type="submit" id="submit-btn" class="btn">Send Message</button>
+                    
                     <p id="form-status"></p>
                 </form>
             </div>
