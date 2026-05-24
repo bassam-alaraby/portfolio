@@ -365,7 +365,7 @@ span {
     align-items: center; 
     max-width: 100%;
     margin: 0 auto;
-    text-align: left;
+    text-align: start;
 }
 
 .contact-left p {
@@ -454,8 +454,18 @@ span {
     padding-top: 1rem;
 }
 
-.contact-layout {
-    align-items: start;
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+#submit-btn {
+    align-self: flex-start;
+    padding: 1rem 4rem;
 }
 
 /* ============================================================
