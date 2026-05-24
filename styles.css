@@ -236,7 +236,7 @@ span {
     color: white;
     font-size: 1.5rem;
     transition: 0.2s ease;
-    cursor: default;
+    cursor: pointer;
 }
 
 .badge:hover {
@@ -360,9 +360,9 @@ span {
 /* --- Contact Form --- */
 .contact-layout {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-    align-items: start;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: center; 
     max-width: 100%;
     margin: 0 auto;
     text-align: left;
