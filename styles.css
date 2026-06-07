@@ -28,6 +28,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 body {
@@ -113,6 +114,7 @@ nav a:hover {
     ============================================================ */
 .home {
     min-height: 100vh;
+    padding-top: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,7 +143,8 @@ span {
 /* --- Home Image --- */
 .home-img {
     cursor: pointer;
-    margin-right: 10rem;
+    margin-right: 5rem;
+    padding-right: 5rem;
     border-right: 1px solid var(--main-color);
 }
 
@@ -354,7 +357,7 @@ span {
 }
 
 .contact p {
-    font-size: 1.6 rem;
+    font-size: 1.6rem;
 }
 
 /* --- Contact Form --- */
@@ -480,6 +483,40 @@ span {
 }
 
 /* ============================================================
+    HAMBURGER MENU
+    ============================================================ */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: transparent;
+    padding: 0;
+    z-index: 1001;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--main-color);
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+/* ============================================================
     MEDIA QUERIES
     ============================================================ */
 @media (max-width: 1000px) {
@@ -488,7 +525,25 @@ span {
     }
 }
 
+@media (max-width: 768px) {
+    .contact-layout { grid-template-columns: 1fr; }
+    .projects-row { flex-direction: column; }
+    .project-card.half { width: 100%; }
+    .home-content h2 { font-size: 4.5rem; }
+    .home-content h3 { font-size: 2.5rem; }
+}
+
 @media (max-width: 995px) {
+
+    /* -- hamburger -- */
+    .hamburger {
+        display: flex;
+    }
+
+    nav.open {
+        display: flex;
+        flex-direction: column;
+    }
 
     /* -- nav -- */
     nav {
@@ -534,8 +589,6 @@ span {
 
     .home-img { display: none; }
 
-    .home-img-mobile{ display: none; }
-
     .home-content h2 { font-size: 4rem; }
     .home-content h3 { font-size: 2rem; }
     .home-content p { font-size: 1.5rem; }
@@ -557,4 +610,7 @@ span {
     /* -- contact -- */
     .contact p { font-size: 1.5rem; }
     .contact-layout { grid-template-columns: 1fr; }
+
+    /* -- form row -- */
+    .form-row { flex-direction: column; }
 }
