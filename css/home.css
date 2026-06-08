@@ -368,3 +368,9 @@
       width: 100%;
     }
     .form-submit:hover { transform: translate(2px,2px); box-shadow: 2px 2px 0 var(--red); }
+
+    @media (max-width: 479px) {
+      .hero-name { font-size: clamp(38px, 12vw, 60px); }
+      .projects-grid { grid-template-columns: 1fr; }
+      .form-submit { font-size: 13px; }
+    }

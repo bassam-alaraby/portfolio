@@ -3,6 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bassam Tarek Al-Araby — CS student at Menoufia University. Building real projects with Python, Flask, and C.">
+  <meta name="author" content="Bassam Tarek Al-Araby">
+  <meta property="og:title" content="Bassam Al-Araby — CS Student & Developer">
+  <meta property="og:description" content="First-year CS student building real projects. CS50x, VORTEX e-commerce, and more.">
+  <meta property="og:url" content="https://bassamalaraby.me">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
   <title>Bassam Al-Araby — CS Student & Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet">
@@ -22,7 +29,7 @@
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="cv.html" class="nav-cv" target="_blank">View CV</a></li>
+      <li><a href="assets/documents/bassam-tarek-alarabi-cv.pdf" class="nav-cv" download>Resume</a></li>
     </ul>
 
     <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Open menu">
@@ -37,7 +44,7 @@
   <a href="#skills" class="m-link">Skills</a>
   <a href="#projects" class="m-link">Projects</a>
   <a href="#contact" class="m-link">Contact</a>
-  <a href="cv.html" class="mobile-cv" target="_blank">View CV</a>
+  <a href="assets/documents/bassam-tarek-alarabi-cv.pdf" class="mobile-cv" download>Resume</a>
 </div>
 
 <main>
@@ -249,7 +256,8 @@
           </div>
         </div>
 
-        <form class="contact-form" action="#" method="POST">
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" data-turbo="false">
+          <input type="hidden" name="_subject" value="New message from bassamalaraby.me">
           <div class="form-row">
             <div class="form-group">
               <label class="form-label">Name</label>
