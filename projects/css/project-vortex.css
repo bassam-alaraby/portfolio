@@ -33,3 +33,13 @@
     .about-section {
       padding-top: 0;
     }
+
+    .project-note {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      color: var(--muted);
+      border-left: 3px solid var(--red);
+      padding: 10px 14px;
+      margin-top: 20px;
+      line-height: 1.7;
+    }

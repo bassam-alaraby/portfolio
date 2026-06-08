@@ -33,3 +33,16 @@
     .about-section {
       padding-top: 0;
     }
+
+    .cert-section {
+      padding: 0 0 40px 0;
+    }
+
+    .cert-img {
+      width: 100%;
+      max-width: 700px;
+      border: 3px solid var(--red);
+      box-shadow: var(--sh-lg);
+      display: block;
+      margin: 0 auto;
+    }

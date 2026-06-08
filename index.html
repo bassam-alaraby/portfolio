@@ -57,8 +57,9 @@
         <h1 class="hero-name">Hi,<br>I'm<br>Bassam.</h1>
         <p class="hero-badge">{Computer Science Student}</p>
         <p class="hero-desc">
-          First-year CS student at Menoufia University. I learn by building —
-          turning CS50 fundamentals into real projects, one line at a time.
+          First-year CS student at Menoufia University. I build to learn —
+          currently focused on web development and exploring cybersecurity.
+          Open to internships and collaboration.
         </p>
         <div class="hero-actions">
           <a href="#projects" class="btn-primary">View My Work →</a>
@@ -96,17 +97,15 @@
         <div class="about-card">
           <p>
             I'm Bassam Tarek Al-Araby — a first-year CS student at the Faculty of Computers
-            and Information, Menoufia University. I learn best by doing, so I've been turning
-            every concept from CS50 into a real project I can point to.
+            and Information, Menoufia University. I learn by building real
+            things: VORTEX is a full-stack e-commerce platform I built for a
+            real clothing brand as my CS50x final project.
           </p>
           <p>
-            I'm currently focused on web development while exploring cybersecurity and systems
-            programming on the side. My philosophy: nail the fundamentals first, then build
-            on top of them.
-          </p>
-          <p>
-            I care about the intersection of engineering and design — I want the things I
-            build to actually be worth using, not just technically functional.
+            I completed CS50x from Harvard and I'm currently expanding my web
+            development skills. I'm looking for internship opportunities where
+            I can apply what I've built and keep growing in a real engineering
+            environment.
           </p>
         </div>
 
@@ -116,12 +115,12 @@
             <div class="stat-lbl">Year · Menoufia University</div>
           </div>
           <div class="stat-card">
-            <div class="stat-num">3+</div>
-            <div class="stat-lbl">Real Projects Built</div>
+            <div class="stat-num">2</div>
+            <div class="stat-lbl">Projects Shipped</div>
           </div>
           <div class="stat-card">
-            <div class="stat-num">CS50</div>
-            <div class="stat-lbl">Harvard · In Progress</div>
+            <div class="stat-num">CS50x</div>
+            <div class="stat-lbl">Harvard · Completed</div>
           </div>
         </div>
       </div>
@@ -142,6 +141,7 @@
             <li>C++</li>
             <li>Python</li>
             <li>Java</li>
+            <li>SQLite</li>
           </ul>
         </div>
         <div class="skill-cat">
@@ -150,14 +150,13 @@
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
-            <li>Jinja2</li>
+            <li>Jinja</li>
           </ul>
         </div>
         <div class="skill-cat">
           <div class="skill-cat-title">Frameworks</div>
           <ul class="skill-list">
             <li>Flask</li>
-            <li>SQLite</li>
           </ul>
         </div>
         <div class="skill-cat">
@@ -202,7 +201,7 @@
           </div>
           <div class="card-body">
             <h3 class="card-title">VORTEX</h3>
-            <p class="card-desc">A full-stack e-commerce site for a clothing brand. Features a product catalog with variants, a session-based cart, checkout flow, and Cloudinary image hosting.</p>
+            <p class="card-desc">A full e-commerce platform built for a real clothing brand — product variants, custom design uploads, admin dashboard, and Telegram order notifications. Submitted to CS50x and still in development.</p>
             <div class="card-tags">
               <span class="tag">Flask</span>
               <span class="tag">Python</span>
@@ -220,12 +219,12 @@
           </div>
           <div class="card-body">
             <h3 class="card-title">CS50x Problem Sets</h3>
-            <p class="card-desc">Harvard CS50x — every problem set from low-level C programs like Mario and Speller to a full Flask finance web app as the final project.</p>
+            <p class="card-desc">Harvard's Introduction to Computer Science — 10 weeks across C, Python, SQL, and Flask. From memory management and hash tables to a stock-trading web app. Certificate earned.</p>
             <div class="card-tags">
               <span class="tag">C</span>
               <span class="tag">Python</span>
-              <span class="tag">Flask</span>
               <span class="tag">SQL</span>
+              <span class="tag">Flask</span>
             </div>
             <span class="card-more">View Details</span>
           </div>
@@ -246,7 +245,9 @@
       <div class="contact-layout">
         <div>
           <h2 class="contact-heading">Let's get<br>in touch.</h2>
-          <p class="contact-desc">Got a question, a project idea, or just want to say hi? Reach out through the form or any of the links below.</p>
+          <p class="contact-desc">
+            Got a question, a project idea, or just want to say hi?<br>
+            Reach out through the form or any of the links below.</p>
 
           <div class="social-links">
             <a href="mailto:elrabyb@gmail.com" class="social-link" aria-label="Email">↗ Email</a>
@@ -256,7 +257,7 @@
           </div>
         </div>
 
-        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" data-turbo="false">
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/maqlwbar" method="POST">
           <input type="hidden" name="_subject" value="New message from bassamalaraby.me">
           <div class="form-row">
             <div class="form-group">
@@ -276,7 +277,7 @@
             <label class="form-label">Message</label>
             <textarea class="form-input" name="message" placeholder="Your message..." required></textarea>
           </div>
-          <button type="submit" class="form-submit">Send Message →</button>
+          <button type="submit" class="form-submit" id="submit-btn">Send Message →</button>
         </form>
       </div>
     </div>

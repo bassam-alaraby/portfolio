@@ -44,77 +44,86 @@
   <div class="container project-header">
     <span class="chip">Project_0x01</span>
     <h1 class="section-title">VORTEX</h1>
-    <p class="hero-badge">{Full-Stack E-Commerce App}</p>
+    <p class="hero-badge">{E-Commerce Platform}</p>
     <p class="project-desc">
-      A full-stack e-commerce platform built as my CS50x Final Project.
-      A real clothing brand's website — not a tutorial clone.
+      A full e-commerce platform built for a real clothing brand. Not a demo,
+      not a tutorial — an actual site handling products, orders, and customers.
+      Submitted as my CS50x final project;
     </p>
   </div>
 
   <section class="about-section">
     <div class="container">
       <div class="about-layout">
+
         <div class="about-card">
           <h3>What it does</h3>
           <ul>
-            <li>Product catalog with size/color variants</li>
-            <li>Session-based shopping cart</li>
-            <li>Custom design upload for products</li>
-            <li>Admin dashboard for managing products, variants, orders</li>
-            <li>Telegram bot notifications for new orders (Arabic HTML messages)</li>
-            <li>Cloudinary image hosting</li>
-            <li>Deployed on Railway with persistent SQLite volume</li>
+            <li>Product catalog with size and color variants</li>
+            <li>Custom design upload — customers can submit their own designs</li>
+            <li>Session-based shopping cart and checkout flow</li>
+            <li>Admin dashboard for managing products, variants, and orders</li>
+            <li>Cloudinary for all image storage and delivery</li>
+            <li>Turso (LibSQL) as the database</li>
+            <li>Telegram bot that notifies the store owner on every new order</li>
+            <li>CSRF protection and rate-limited admin login</li>
+            <li>Deployed on Vercel</li>
           </ul>
         </div>
+
         <div class="about-sidebar">
           <div class="stat-card">
             <div class="stat-num">Flask</div>
             <div class="stat-lbl">Backend Framework</div>
           </div>
           <div class="stat-card">
-            <div class="stat-num">SQLite</div>
+            <div class="stat-num">Turso</div>
             <div class="stat-lbl">Database</div>
           </div>
           <div class="stat-card">
             <div class="stat-num">Cloudinary</div>
-            <div class="stat-lbl">Image Storage</div>
+            <div class="stat-lbl">Media Storage</div>
           </div>
           <div class="stat-card">
-            <div class="stat-num">Railway</div>
+            <div class="stat-num">Vercel</div>
             <div class="stat-lbl">Deployment</div>
           </div>
-          <div class="stat-card">
-            <div class="stat-num">CS50x</div>
-            <div class="stat-lbl">Submitted Project</div>
-          </div>
         </div>
+
       </div>
     </div>
   </section>
 
   <section class="project-tags-section">
     <div class="container">
+
       <div class="card-tags">
         <span class="tag">Flask</span>
         <span class="tag">Python</span>
-        <span class="tag">SQLite</span>
-        <span class="tag">Jinja2</span>
         <span class="tag">HTML</span>
         <span class="tag">CSS</span>
         <span class="tag">JavaScript</span>
+        <span class="tag">Jinja2</span>
+        <span class="tag">Turso</span>
         <span class="tag">Cloudinary</span>
-        <span class="tag">Railway</span>
-        <span class="tag">Git</span>
+        <span class="tag">Telegram API</span>
+        <span class="tag">Vercel</span>
       </div>
 
       <div class="hero-actions">
-        <a href="https://github.com/bassam-alaraby/vortex" class="btn-primary" target="_blank">View on GitHub →</a>
-        <a href="https://vortex-brand.vercel.app" class="btn-outline" target="_blank">Live Demo</a>
+        <a href="https://github.com/bassam-alaraby/vortex" class="btn-primary" target="_blank" rel="noopener noreferrer">GitHub (Snapshot) →</a>
+        <a href="https://vortex-brand.vercel.app" class="btn-outline" target="_blank" rel="noopener noreferrer">Live Demo</a>
       </div>
+
+      <p class="project-note">
+        The public repo is a snapshot of the CS50x submission. <br>
+        The live site reflects ongoing development and improvements made after the course submission.
+      </p>
 
       <div class="project-back">
         <a href="../index.html#projects" class="btn-outline">← Back to Portfolio</a>
       </div>
+
     </div>
   </section>
 
