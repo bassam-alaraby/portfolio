@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bassam Tarek Al-Arabi — CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black: #0a0a0a;
+    --mid: #3a3a3a;
+    --light: #7a7a7a;
+    --rule: #d0d0d0;
+    --page-w: 210mm;
+    --page-h: 297mm;
+  }
+
+  body {
+    background: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 2rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+
+  .page {
+    background: #fff;
+    width: var(--page-w);
+    min-height: var(--page-h);
+    padding: 14mm 16mm 14mm 16mm;
+    box-shadow: 0 8px 48px rgba(0,0,0,0.18);
+  }
+
+  /* ── HEADER ── */
+  header {
+    border-bottom: 3px solid var(--black);
+    padding-bottom: 7mm;
+    margin-bottom: 6mm;
+  }
+
+  .name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 50pt;
+    color: var(--black);
+    line-height: 0.92;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+  }
+
+  .title-line {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7.5pt;
+    color: var(--light);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 3mm;
+    margin-bottom: 4mm;
+  }
+
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4mm 7mm;
+    margin-top: 3mm;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 2mm;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7.2pt;
+    color: var(--mid);
+    text-decoration: none;
+  }
+
+  .contact-item i {
+    font-size: 8pt;
+    color: var(--black);
+    width: 10px;
+    text-align: center;
+  }
+  
+  .repo-link {
+    gap: 2mm;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7.2pt;
+    color: var(--mid);
+    text-decoration: none;
+  }
+
+  .repo-link i {
+    font-size: 8pt;
+    color: var(--black);
+    width: 10px;
+    text-align: center;
+  }
+
+  /* ── SECTION ── */
+  section {
+    margin-bottom: 5mm;
+  }
+
+  .sec-head {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 13pt;
+    color: var(--black);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 1.5px solid var(--black);
+    padding-bottom: 1mm;
+    margin-bottom: 3.5mm;
+  }
+
+  /* ── OBJECTIVE ── */
+  .objective p {
+    font-size: 9pt;
+    color: var(--mid);
+    line-height: 1.55;
+    max-width: 95%;
+  }
+
+  /* ── EDUCATION ── */
+  .edu-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .edu-name {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 9.5pt;
+    color: var(--black);
+  }
+
+  .edu-sub {
+    font-size: 8.5pt;
+    color: var(--light);
+    font-style: italic;
+    margin-top: 0.8mm;
+  }
+
+  .edu-date {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7.5pt;
+    color: var(--light);
+  }
+
+  /* ── SKILLS ── */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2mm 8mm;
+  }
+
+  .skill-row {
+    display: flex;
+    gap: 2mm;
+    font-size: 8.5pt;
+    align-items: baseline;
+  }
+
+  .skill-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7pt;
+    font-weight: 600;
+    color: var(--black);
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    min-width: 80px;
+  }
+
+  .skill-val {
+    color: var(--mid);
+    font-size: 8.5pt;
+  }
+
+  /* ── PROJECTS ── */
+  .project + .project { margin-top: 4mm; }
+
+  .proj-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1mm;
+  }
+
+  .proj-name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 12pt;
+    color: var(--black);
+    letter-spacing: 0.3px;
+  }
+
+  .proj-tech {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 6.8pt;
+    color: var(--light);
+    letter-spacing: 0.5px;
+  }
+
+  .proj-meta {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7pt;
+    color: var(--light);
+    margin-bottom: 1.5mm;
+  }
+
+  .proj-meta i { margin-right: 1mm; }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  ul li {
+    font-size: 8.5pt;
+    color: var(--mid);
+    line-height: 1.5;
+    padding-left: 8mm;
+    position: relative;
+    margin-bottom: 0.8mm;
+  }
+
+  ul li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--black);
+    font-weight: 600;
+  }
+
+  /* ── COURSES ── */
+  .course-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1.5mm;
+  }
+
+  .course-name {
+    font-weight: 500;
+    font-size: 9pt;
+    color: var(--black);
+  }
+
+  .course-org {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7pt;
+    color: var(--light);
+  }
+
+  .course-detail {
+    font-size: 8pt;
+    color: var(--mid);
+    font-style: italic;
+    margin-bottom: 0.5mm;
+  }
+
+  /* ── LANGUAGES ── */
+  .lang-row {
+    display: flex;
+    gap: 10mm;
+  }
+
+  .lang-item { display: flex; flex-direction: column; }
+  .lang-name { font-weight: 500; font-size: 9pt; color: var(--black); }
+  .lang-level { font-size: 7.8pt; color: var(--light); font-style: italic; }
+
+  /* ── PRINT ── */
+  @media print {
+    body { background: none; padding: 0; }
+    .page { box-shadow: none; }
+    @page {
+      size: A4;
+      margin: 5mm;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="name">Bassam Tarek Al-Arabi</div>
+    <div class="title-line">Computer Science Student · Menoufia University</div>
+    <div class="contact-row">
+      <span class="contact-item"><i class="fas fa-map-marker-alt"></i> Shibin El-Kom, Egypt</span>
+      <span class="contact-item"><i class="fas fa-phone"></i> +201226620552</span>
+      <a class="contact-item" href="mailto:elrabyb@email.com"><i class="fas fa-envelope"></i> elrabyb@email.com</a>
+      <a class="contact-item" href="https://bassamalaraby.me" target="_blank"><i class="fas fa-globe"></i> bassamalaraby.me</a>
+      <a class="contact-item" href="https://github.com/bassam-alaraby" target="_blank"><i class="fab fa-github"></i> github.com/bassam-alaraby</a>
+      <a class="contact-item" href="https://linkedin.com/in/bsam-alaraby" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/bsam-alaraby</a>
+    </div>
+  </header>
+
+  <section class="objective">
+    <div class="sec-head">Objective</div>
+    <p>First-year CS student with hands-on project experience in Python, Flask, and C, seeking an internship to apply practical skills in a real engineering environment.</p>
+  </section>
+
+  <section>
+    <div class="sec-head">Education</div>
+    <div class="edu-row">
+      <div>
+        <div class="edu-name">Faculty of Computers &amp; Information — Menoufia University</div>
+        <div class="edu-sub">B.Sc. Computer Science</div>
+      </div>
+      <div class="edu-date">2025 → 2029</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">Technical Skills</div>
+    <div class="skills-grid">
+      <div class="skill-row"><span class="skill-label">Languages</span><span class="skill-val">C, C++, Python, Java</span></div>
+      <div class="skill-row"><span class="skill-label">Web Dev</span><span class="skill-val">Flask, HTML, CSS, Jinja</span></div>
+      <div class="skill-row"><span class="skill-label">Database</span><span class="skill-val">SQLite</span></div>
+      <div class="skill-row"><span class="skill-label">Tools</span><span class="skill-val">Git, GitHub, Linux</span></div>
+      <div class="skill-row"><span class="skill-label">Concepts</span><span class="skill-val">Data Structures, Problem Solving</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">Projects</div>
+
+    <div class="project">
+      <div class="proj-header">
+        <span class="proj-name">VORTEX — E-commerce Web App</span>
+        <span class="proj-tech">Flask · SQLite · HTML/CSS &nbsp;·&nbsp; 2026</span>
+      </div>
+      <div class="proj-meta">
+        <i class="fas fa-code-branch"></i> CS50x Final Project &nbsp;·&nbsp;
+        <i class="fab fa-github"></i> <a class="repo-link" href="https://github.com/bassam-alaraby/vortex" target="_blank">github.com/bassam-alaraby/vortex</a>
+      </div>
+      <ul>
+        <li>Designed full database schema for products, variants, cart, and orders</li>
+        <li>Built admin panel for managing products, variants, and orders</li>
+        <li>Implemented session-based cart system and checkout flow</li>
+        <li>Developed responsive frontend with Arabic RTL support</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="proj-header">
+        <span class="proj-name">CS50x Problem Sets</span>
+        <span class="proj-tech">C · Python · SQL &nbsp;·&nbsp; 2026</span>
+      </div>
+      <div class="proj-meta">
+        <i class="fas fa-university"></i> Harvard University &nbsp;·&nbsp;
+        <i class="fab fa-github"></i> <a class="repo-link" href="https://github.com/bassam-alaraby/cs50x-solutions" target="_blank">github.com/bassam-alaraby/cs50x-solutions</a>
+      </div>
+      <ul>
+        <li>Solved algorithmic problems covering sorting, memory, and data structures</li>
+        <li>Implemented dynamic memory management and pointer arithmetic in C</li>
+        <li>Built CLI applications and a stock-trading web app (CS50 Finance)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">Courses</div>
+    <div class="course-row">
+      <span class="course-name">CS50x — Introduction to Computer Science</span>
+      <span class="course-org">Harvard University</span>
+    </div>
+    <div class="course-detail">Covers algorithms, data structures, memory management, web development.</div>
+  </section>
+
+  <section>
+    <div class="sec-head">Languages</div>
+    <div class="lang-row">
+      <div class="lang-item">
+        <span class="lang-name">Arabic</span>
+        <span class="lang-level">Native</span>
+      </div>
+      <div class="lang-item">
+        <span class="lang-name">English</span>
+        <span class="lang-level">Professional working proficiency</span>
+      </div>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
