@@ -20,8 +20,7 @@ Personal portfolio website built with HTML, CSS, and JavaScript.
 │   └── script.js
 ├── projects
 │   ├── css
-│   │   ├── project-vortex.css
-│   │   └── project-cs50.css
+│   │   ├── project.css
 │   ├── project-vortex.html
 │   └── project-cs50.html
 ├── index.html
