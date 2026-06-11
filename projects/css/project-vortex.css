@@ -43,3 +43,8 @@
       margin-top: 20px;
       line-height: 1.7;
     }
+
+    .project-note a {
+      color: var(--orange);
+      text-decoration: underline;
+    }
