@@ -61,7 +61,7 @@
 
 .project-stat-num {
   font-family: 'Syne', sans-serif;
-  font-size: 38px;
+  font-size: clamp(24px, 5vw, 38px);
   font-weight: 800;
   color: var(--red);
   line-height: 1;
@@ -174,4 +174,14 @@
 .project-note a {
   color: var(--orange);
   text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .project-about-card {
+    padding: 20px;
+  }
+
+  .project-stat-card {
+    padding: 16px 20px;
+  }
 }

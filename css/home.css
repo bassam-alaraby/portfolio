@@ -195,7 +195,7 @@
 
 .stat-num {
   font-family: 'Syne', sans-serif;
-  font-size: 38px;
+  font-size: clamp(24px, 5vw, 38px);
   font-weight: 800;
   color: var(--red);
   line-height: 1;
@@ -576,5 +576,19 @@ textarea.form-input {
 
   .form-submit {
     font-size: 13px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-card {
+    padding: 20px;
+  }
+
+  .stat-card {
+    padding: 16px 20px;
+  }
+
+  .skill-cat {
+    padding: 16px;
   }
 }

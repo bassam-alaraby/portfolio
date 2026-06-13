@@ -404,14 +404,6 @@ a {
     width: 100%;
     text-align: center;
   }
-
-  .about-card {
-    padding: 20px;
-  }
-
-  .stat-num {
-    font-size: 28px;
-  }
 }
 
 @media (max-width: 359px) {
