@@ -433,6 +433,24 @@
 }
 
 /* =====================
+   COMBO CARD (multi-link project card)
+===================== */
+.card-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.card-links .card-more {
+  transition: color 0.15s;
+}
+
+.card-links .card-more:hover {
+  color: var(--red);
+}
+
+/* =====================
    CONTACT
 ===================== */
 .contact-section {
