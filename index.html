@@ -48,6 +48,8 @@
   </div>
 </nav>
 
+  <div class="scroll-progress" id="scrollProgress"></div>
+
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
   <a href="#about" class="m-link">About</a>
@@ -60,7 +62,7 @@
 <main>
 
   <!-- HERO -->
-  <div class="hero" id="home">
+  <div class="hero" id="home" data-reveal>
     <div class="hero-inner">
       <div class="hero-content">
         <span class="hero-tag">// cs_student.init()</span>
@@ -99,7 +101,7 @@
 
   <!-- ABOUT -->
   <section class="about-section" id="about">
-    <div class="container">
+    <div class="container" data-reveal>
       <span class="chip">About Me</span>
       <h2 class="section-title">A bit about<br>who I am.</h2>
 
@@ -139,7 +141,7 @@
 
   <!-- SKILLS (full-bleed dark) -->
   <section class="skills-section" id="skills">
-    <div class="container">
+    <div class="container" data-reveal>
       <span class="chip">Skills & Tools</span>
       <h2 class="section-title">What I work with.</h2>
 
@@ -198,7 +200,7 @@
 
   <!-- PROJECTS -->
   <section class="projects-section" id="projects">
-    <div class="container">
+    <div class="container" data-reveal>
       <span class="chip">Projects</span>
       <h2 class="section-title">Things I've built.</h2>
 
@@ -270,7 +272,7 @@
 
   <!-- CONTACT -->
   <section class="contact-section" id="contact">
-    <div class="container">
+    <div class="container" data-reveal>
       <span class="chip">Contact</span>
 
       <div class="contact-layout">
@@ -331,6 +333,10 @@
     </div>
   </div>
 </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
 
   <script src="js/script.js"></script>
 
