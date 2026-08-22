@@ -158,6 +158,21 @@
   margin: 0 auto;
 }
 
+.final-project-link {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--orange);
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.final-project-link::after {
+  content: ' →';
+}
+
 /* =====================
    VORTEX
 ===================== */
