@@ -42,17 +42,6 @@
   margin-bottom: 18px;
 }
 
-.hero-tag {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--orange);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-bottom: 14px;
-  display: block;
-}
-
 .hero-name {
   font-family: 'Syne', sans-serif;
   font-size: clamp(46px, 11vw, 80px);

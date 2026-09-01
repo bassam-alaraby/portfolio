@@ -67,26 +67,6 @@ a {
   margin-bottom: 22px;
 }
 
-.chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--cream);
-  background: var(--red);
-  padding: 4px 10px;
-  margin-bottom: 20px;
-}
-
-.chip::before {
-  content: '//';
-  opacity: 0.45;
-}
-
 .section-title {
   font-family: 'Syne', sans-serif;
   font-size: clamp(30px, 5vw, 44px);
