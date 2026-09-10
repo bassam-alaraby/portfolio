@@ -26,6 +26,8 @@ Personal portfolio website built with HTML, CSS, and JavaScript.
 │   ├── project-al-qadia-momken.html
 │   └── project-mohamed-elham.html
 ├── index.html
+├── sitemap.xml
+├── robots.txt
 ├── CNAME
 └── README.md
 ```
