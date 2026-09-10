@@ -6,23 +6,25 @@ Personal portfolio website built with HTML, CSS, and JavaScript.
 
 ```
 .
-├── assets
+├── assets/
 │   ├── documents/
 │   │   └── bassam-tarek-alarabi-cv.pdf
 │   ├── favicons/
 │   └── images/
 │       ├── bassam.jpg
 │       └── cs50-certificate.png
-├── css
+├── css/
 │   ├── style.css
 │   └── home.css
-├── js
+├── js/
 │   └── script.js
-├── projects
-│   ├── css
-│   │   ├── project.css
+├── projects/
+│   ├── css/
+│   │   └── project.css
 │   ├── project-vortex.html
-│   └── project-cs50.html
+│   ├── project-cs50.html
+│   ├── project-al-qadia-momken.html
+│   └── project-mohamed-elham.html
 ├── index.html
 ├── CNAME
 └── README.md
