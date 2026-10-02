@@ -312,7 +312,6 @@
         </div>
 
         <form class="contact-form" id="contact-form" action="https://formspree.io/f/maqlwbar" method="POST">
-          <input type="hidden" name="_subject" value="New message from bassamalaraby.me">
           <div class="form-row">
             <div class="form-group">
               <label class="form-label">Name</label>
@@ -325,7 +324,7 @@
           </div>
           <div class="form-group">
             <label class="form-label">Subject</label>
-            <input class="form-input" type="text" name="subject" placeholder="What's this about?">
+            <input class="form-input" type="text" name="_subject" placeholder="What's this about?" required>
           </div>
           <div class="form-group">
             <label class="form-label">Message</label>
