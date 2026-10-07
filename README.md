@@ -8,11 +8,11 @@ Personal portfolio website built with HTML, CSS, and JavaScript.
 .
 ├── assets/
 │   ├── documents/
-│   │   └── bassam-tarek-alarabi-cv.pdf
+│   │   └── bassam-tarek-alaraby-cv.pdf
 │   ├── favicons/
 │   └── images/
-│       ├── bassam.jpg
-│       └── cs50-certificate.png
+│       ├── bassam.png
+│       └── cs50x-certificate.png
 ├── css/
 │   ├── style.css
 │   └── home.css
@@ -22,9 +22,7 @@ Personal portfolio website built with HTML, CSS, and JavaScript.
 │   ├── css/
 │   │   └── project.css
 │   ├── project-vortex.html
-│   ├── project-cs50.html
-│   ├── project-al-qadia-momken.html
-│   └── project-mohamed-elham.html
+│   └── project-cs50x.html
 ├── index.html
 ├── sitemap.xml
 ├── robots.txt
